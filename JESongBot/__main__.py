@@ -26,7 +26,7 @@ Heya [{}](tg://user?id={}), I'm Song Bot 🎵
 
 Do /help for know about me!
 
-A bot by **@Infinity_BOTs**
+A bot by **@WH173_5P1D3R**
 """
 
 help_text = """
@@ -34,7 +34,7 @@ I can download HQ songs from YouTube Music
 
 **Syntax** - `/song [song name]`
 
-A bot by **@Infinity_BOTs**
+A bot by **@WH173_5P1D3R**
 """
 
 @bot.on_message(filters.command("start") & ~filters.edited)
@@ -47,17 +47,17 @@ async def start(client, message):
             [
                 [
                     InlineKeyboardButton(
-                        text="Source", url="https://github.com/ImJanindu/JESongBot"
+                        text="CONTACT OWNER", url="http://wh173-5p1d3r.rf.gd"
                     ),
                     InlineKeyboardButton(
-                        text="Dev", url="https://t.me/JEBotZ"
+                        text="CHANNEL", url="https://t.me/termux_tools_AA"
                     )
                 ]
             ]
         )
         await message.reply(pm_start_text.format(name, user_id), reply_markup=btn)
     else:
-        start_text = "Heya [{}](tg://user?id={}), Song Bot is online ✅"
+        start_text = "Hey [{}](tg://user?id={}), Song Bot is online ✅"
         await message.reply(start_text.format(name, user_id))
     
 @bot.on_message(filters.command("help") & ~filters.edited)
